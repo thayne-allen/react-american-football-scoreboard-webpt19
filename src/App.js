@@ -6,6 +6,18 @@ import "./App.css";
 function App() {
   //TODO: STEP 2 - Establish your applictaion's state with some useState hooks.  You'll need one for the home score and another for the away score.
 
+  // useState hooks for home.
+  const usingHomeState = useState(0);
+  const setHomeStateVar = usingHomeState[1];
+  
+  const [homeCount, setHomeCount] = useState(24);
+
+  // useState hooks for away
+  const usingAwayState = useState(0);
+  const setAwayStateVar = usingAwayState[1];
+
+  const [awayCount, setAwayCount] = useState(17);
+
   return (
     <div className="container">
       <section className="scoreboard">
